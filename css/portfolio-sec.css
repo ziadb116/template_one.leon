@@ -1,0 +1,34 @@
+:root {
+  --main-font: "Work Sans", sans-serif;
+  --primary-color: #00e1ff;
+  --secondary-color: #2c4755;
+  --color-black: #333;
+  --section-background: #eee;
+  --section-padding: 60px;
+}
+.portfolio-sec {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.portfolio-content {
+  padding-top: 100px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.portfolio-content .card {
+  background-color: var(--section-background);
+}
+.portfolio-content .card img {
+  max-width: 100%;
+}
+.portfolio-content .card .info {
+  padding: 20px;
+}
+.portfolio-content .card .info h3 {
+  margin: 0;
+}
+.portfolio-content .card .info p {
+  padding-bottom: 0;
+}

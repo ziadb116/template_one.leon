@@ -1,0 +1,78 @@
+:root {
+  --main-font: "Work Sans", sans-serif;
+  --primary-color: #00e1ff;
+  --secondary-color: #2c4755;
+  --color-black: #333;
+  --section-background: #eee;
+  --section-padding: 60px;
+}
+
+.services {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #eee;
+  z-index: -1;
+}
+
+.main-services {
+  padding-top: 100px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.main-services .col .ser {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .main-services .ser {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.main-services .col .ser i {
+  font-size: 40px;
+  flex-basis: 60px;
+  color: var(--primary-color);
+}
+
+.main-services .col .ser .tex-serv h3 {
+  margin: 0 0 20px 0;
+}
+
+.main-services .col .ser .tex-serv p {
+  color: #444;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.main-services .col .imge {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.imge img {
+  height: 260px;
+  width: 200px;
+}
+
+@media (max-width: 1199px) {
+  .imge {
+    display: none;
+  }
+}
+
+.main-services .col .imge::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -50px;
+  right: 0;
+  height: calc(100% + 100px);
+  width: 100px;
+  background-color: var(--secondary-color);
+}

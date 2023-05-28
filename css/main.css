@@ -1,0 +1,97 @@
+/* normalize css */
+@import url(./normalize.css);
+/*font awesome */
+@import url(./all.min.css);
+/*header section */
+@import url(./header.css);
+/*landing section */
+@import url(./landing-sec.css);
+/*feeatures section */
+@import url(./features-sec.css);
+/*services section */
+@import url(./services-sec.css);
+/*portfolio section */
+@import url(./portfolio-sec.css);
+/*about section */
+@import url(./about.css);
+/*contact section */
+@import url(./contact-sec.css);
+/*footer section */
+@import url(./footer.css);
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --main-font: "Work Sans", sans-serif;
+  --primary-color: #00e1ff;
+  --secondary-color: #2c4755;
+  --color-black: #333;
+  --section-background: #eee;
+  --section-padding: 60px;
+}
+
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.special-heading {
+  margin: 0;
+  letter-spacing: -3px;
+  text-align: center;
+  font-size: 100px;
+  color: #c9c9c9;
+}
+
+.special-heading + p {
+  text-align: center;
+  margin-top: -40px;
+}
+
+@media (max-width: 767px) {
+  .special-heading {
+    font-size: 60px;
+  }
+  .special-heading + p {
+    margin-top: -30px;
+    font-size: 12px;
+  }
+}
+
+.global-grid-three {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}

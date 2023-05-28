@@ -1,0 +1,51 @@
+:root {
+  --main-font: "Work Sans", sans-serif;
+  --primary-color: #00e1ff;
+  --secondary-color: #2c4755;
+  --color-black: #333;
+  --section-background: #eee;
+  --section-padding: 60px;
+}
+.contact-sec {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  text-align: center;
+}
+
+.contect-info {
+  padding-top: 60px;
+}
+.contect-info h3 {
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 50px;
+}
+.contect-info h4 {
+  font-weight: 800;
+  color: var(--secondary-color);
+  font-size: 30px;
+  padding-left: 30px;
+}
+@media (max-width: 767px) {
+  .contect-info h3 {
+    font-size: 20px;
+  }
+  .contect-info h4 {
+    font-size: 18px;
+  }
+}
+
+.contact-icons {
+  padding-top: 20px;
+  padding-left: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.contact-icons p {
+  padding-right: 20px;
+}
+.contact-icons i {
+  padding-right: 20px;
+  color: #00e1ff;
+}

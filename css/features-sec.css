@@ -1,0 +1,44 @@
+:root {
+  --main-font: "Work Sans", sans-serif;
+
+  --primary-color: #00e1ff;
+  --secondary-color: #2c4755;
+
+  --color-white: #fff;
+  --color-creamson: #fff0de;
+}
+.features-sec {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.features-sec .container {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.features-sec .container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.features-sec .container div i {
+  font-size: 100px;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+.features-sec .container div h3 {
+  font-weight: 800;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.features-sec .container div.feat p {
+  line-height: 1.8;
+  font-size: 17px;
+  color: #777;
+}

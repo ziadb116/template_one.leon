@@ -1,0 +1,33 @@
+:root {
+  --main-font: "Work Sans", sans-serif;
+
+  --primary-color: #00e1ff;
+  --secondary-color: #2c4755;
+
+  --color-white: #fff;
+  --color-creamson: #fff0de;
+}
+
+div.landing-text {
+  background-image: url(../assets/moin.jpeg);
+  background-repeat: no-repeat;
+  height: calc(100vh - 61px);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+}
+
+.intro-text {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 320px;
+  max-width: 100%;
+}
+.intro-text h1 {
+  color: var(--primary-color);
+}
